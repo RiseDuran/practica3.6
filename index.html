@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arc de Sant Martí</title>
+
+</head>
+
+
+<body>
+    <h1 onmouseover="cambiarcolortodos()" onmouseout="quitartodo()">Arc de Sant Martí</h1>
+
+    <p onmouseover="cambiarcolor(parraforojo, 'red')" onmouseout="quitarcolor(parraforojo)" id="rojo">roig, red, rojo </p>
+    <p onmouseover="cambiarcolor(parrafonaranja, 'orange')"  onmouseout="quitarcolor(parrafonaranja)" id="naranja">taronja, orange, naranja</p>
+    <p onmouseover="cambiarcolor(parrafoamarillo, 'yellow')" onmouseout="quitarcolor(parrafoamarillo)" id="amarillo">groc, yellow, amarillo</p>
+    <p onmouseover="cambiarcolor(parrafoverde, 'green')" onmouseout="quitarcolor(parrafoverde)" id="verde">verd, green, verde</p>
+    <p onmouseover="cambiarcolor(parrafonazulclaro, 'lightblue')" onmouseout="quitarcolor(parrafonazulclaro)" id="azulclaro">blau clar, light blue, azul claro</p>
+    <p onmouseover="cambiarcolor(parrafoazul, 'blue')" onmouseout="quitarcolor(parrafoazul)" id="azul">blau, blue, azul</p>
+    <p onmouseover="cambiarcolor(parrafomorado, 'purple')" onmouseout="quitarcolor(parrafomorado)" id="morado">morat, purple, morado</p>
+    
+    <script>
+        var parraforojo = document.getElementById('rojo');
+        var parrafonaranja = document.getElementById('naranja');
+        var parrafoamarillo = document.getElementById('amarillo');
+        var parrafoverde = document.getElementById('verde');
+        var parrafonazulclaro = document.getElementById('azulclaro');
+        var parrafoazul = document.getElementById('azul');
+        var parrafomorado = document.getElementById('morado');
+
+    
+       function cambiarcolor(parrafo, colorparrafo){
+        parrafo.style.color = colorparrafo;
+       }
+    
+       function quitarcolor(parrafo){
+        parrafo.style.color = "black";
+       }
+    
+    
+       function cambiarcolortodos(){
+            cambiarcolor(parraforojo, 'red');
+            cambiarcolor(parrafonaranja, 'orange');
+            cambiarcolor(parrafoamarillo, 'yellow');    
+            cambiarcolor(parrafoverde, 'green');
+            cambiarcolor(parrafonazulclaro, 'lightblue');
+            cambiarcolor(parrafoazul, 'blue');
+            cambiarcolor(parrafomorado, 'purple');
+
+        }
+
+        function quitartodo(){
+            quitarcolor(parraforojo);
+            quitarcolor(parrafonaranja);
+            quitarcolor(parrafoamarillo);
+            quitarcolor(parrafonazulclaro);
+            quitarcolor(parrafoazul);
+            quitarcolor(parrafomorado);
+        }
+    
+    
+    </script>
+</body>
+</html>
